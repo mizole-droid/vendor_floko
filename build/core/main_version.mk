@@ -4,13 +4,13 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# crDroid System Version
+# FlokoROM System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.crdroid.build.version=$(LINEAGE_VERSION) \
-    ro.crdroid.display.version=$(LINEAGE_DISPLAY_VERSION) \
-    ro.crdroid.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(CR_VERSION) \
-    ro.crdroidlegal.url=https://crdroid.net/legal.php
+    ro.floko.build.version=$(LINEAGE_VERSION) \
+    ro.floko.display.version=$(LINEAGE_DISPLAY_VERSION) \
+    ro.floko.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(FLOKO_VERSION) \
+    ro.flokolegal.url=https://wiki.maud.io/floko/legal
 
 # LineageOS Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
