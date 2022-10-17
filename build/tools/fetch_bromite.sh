@@ -5,7 +5,7 @@ cd ${ANDROID_BUILD_TOP}/vendor/addons/prebuilt/product/priv-app/Bromite
 
 TARGET_ARCH=$1
 BROMITE_VERSION_FILE=${TARGET_ARCH}_current_bromite_version.txt
-BROMITE_LATEST_TAG=$(curl -s -L https://github.com/bromite/bromite/releases/latest | grep "download/[0-9\.]*" | cut -d '/' -f6 | head -n 1)
+BROMITE_LATEST_TAG=$(curl -s -L https://github.com/bromite/bromite/releases/latest | grep "<title>Release Bromite"| tr -cd '0123456789.\n')
 
 function get_latest_bromite () {
     echo "info: Downloading latest Bromite"
