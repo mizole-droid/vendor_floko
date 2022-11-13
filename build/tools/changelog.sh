@@ -37,7 +37,7 @@ else
 	fi
 fi
 
-REPO_LIST="$(repo list --path | sed 's|^vendor/crDroidOTA$||')"
+PO_LIST="$(repo list --path)"
 for i in $(seq $changelog_days); do
     After_Date=`date --date="$i days ago" +%m-%d-%Y`
     k=$(expr $i - 1)
