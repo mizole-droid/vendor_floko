@@ -1,7 +1,7 @@
 #!/bin/bash
 
 START_DIR=$(pwd)
-cd ${ANDROID_BUILD_TOP}/vendor/addons/prebuilt/product/priv-app/Bromite
+cd ${ANDROID_BUILD_TOP}/packages/apps/Bromite
 
 TARGET_ARCH=$1
 BROMITE_VERSION_FILE=${TARGET_ARCH}_current_bromite_version.txt
