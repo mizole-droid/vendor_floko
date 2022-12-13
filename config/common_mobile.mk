@@ -14,8 +14,7 @@ PRODUCT_PACKAGES += \
     Etar \
     ExactCalculator \
     Profiles \
-    Seedvault \
-    Bromite
+    Seedvault
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
 PRODUCT_PACKAGES += \
